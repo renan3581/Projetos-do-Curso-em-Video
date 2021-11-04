@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+
+<style>
+body {background-color: black; font-size: 20px; font-style: normal; font-variant: small-caps; color: grey;  width: 90%; margin: auto;}
+
+a {color: cyan;}
+a:hover {color: red}
+a:hover {background-color: whitesmoke}
+a:visited {color: teal;} 
+a:active{color: black}
+</style>
+
+</head>
+<body>
+
+<h1>Tutorial</h1> 
+<h2>Titulos, Topicos e Paragrafos</h2>
+<p>&lt;h1&gt; - Titulo, &lt;h2&gt; - Subtitulos, &lt;h3&gt; - Topicos, &lt;h4&gt; - Subtopicos, &lt;p&gt; - Paragrafos. </p>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Linha horizontal e Quebra de linha</h2>
+<p>&lt;hr&gt;, &lt;br&gt;.</p>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Simbolos</h2>
+    &reg;
+    &copy;
+    &trade;
+    &euro;
+    &pound;
+    &yen;
+    &cent;
+    &real;
+    &Delta;
+    &uparrow;
+    <br>
+    
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Emojis</h2>
+ &#x1F43A;
+ &#x270C; 
+<br>
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Comentarios</h2>
+<p>&lt;!-- --&gt;</p>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Formatações de texto</h2>
+
+<pre>
+    
+&lt;strong&gt; - Negrito.
+&lt;b&gt; - Negrito com sentido de menos importancia. 
+&lt;em&gt; - Itálico. 
+&lt;i&gt; - Itálico com sentido de menos importancia. 
+&lt;mark&gt; - Texto marcado. 
+&lt;small&gt; - Texto pequeno.  
+&lt;del&gt; - Texto deletado. 
+&lt;ins&gt; - Texto inserido. 
+&lt;sup&gt; - Texto sobrescrito. 
+&lt;sub&gt; - Texto subrescrito. 
+&lt;code&gt; - Letras com o mesmo espaçamento. 
+&lt;pre&gt; -  Faz com que o texto fique exatamente como está escrito no editor, seja quebras de linha ou espaçamentos.
+&lt;q&gt; - Coloca aspas na frase.
+Blockquote – Coloca o texto com espaçamento para indicar que é uma citação.   
+</pre>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Outros</h2>
+
+<pre>
+Cite=“” - Faz com que o google e outros mecanismos de pesquisa reconheçam de onde você tirou essa citação.(link) 
+
+&lt;abbr&gt; - Faz com que quando você coloque o mouse em cima de uma palavra abreviada o termo completo apareça. 
+    
+&lt;bdo&gt; - Texto invertido. (Utilidade = Nenhuma) 
+    
+&lt;li&gt; - Indicar que são itens de lista. 
+    
+&lt;ol&gt; - Indicar que são listas onde a ordem importa 
+    
+type=“” - Dentro de ol seleciona o tipo de contagem (1., I., A., Etc..) 
+    
+start=“” - Dentro do ol indica de qual número, letra a contagem deve começar. 
+    
+&lt;ul&gt; - Listas não ordenadas. 
+    
+.. = É usado para poder voltar na pasta anterior, possibilitando o uso de arquivos nela presente 
+
+&lt;a&gt; - Coloca uma determinada palavra como um <a href="#" target="blank">link</a> - # > link falso
+target="blank" - Faz com que seja aberto em uma nova aba.
+</pre>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h1>Estilo</h1>
+
+
+<pre>
+&lt;style&gt; 
+     
+     body {background-color: black; font-size: 20px; font-style: normal; font-variant: small-caps; color: grey; margin: 100px 80px 60px 40px;}
+
+     a {color: cyan;}
+
+A tag &lt;a&gt;, so pode ter sua cor alterada através de uma linha de codigo individual.
+    
+text-transform: lowercase - transforma todo o texto da parte selecionada em lowercase.
+
+Não é necessario que você escreve uma linha de codigo para cada componente do body, você pode colocar-los em uma unica linha:
+h1, h2, p, pre {color: cyan;}
+    
+&lt;/style&gt;
+</pre>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Box-Model</h2>
+
+<pre>
+    p{
+        margin-top:50px
+        margin-right:40px
+        margin-bottom:30px
+        margin-lef:20px
+    }
+
+Forma Abreviada:
+p{margin: 50px 40px 30px 20px;}
+
+Caso um valor não seja digitado, sera utilizado o mesmo valor do lado oposto;
+Caso seja digitado apenas um valor, todos os lados recebem esse mesmo valor;
+    
+    p{
+        width: 1400px  - Pode ser porcentagem tambem.
+        margin: auto;
+    }  
+
+Desta forma o proprio navegador faz a divisão das margens, de acordo com a sobra de largura do monitor - Largura informada;
+Caso o valor informado esteja em porcentagem, a diferença sera calculada de acordo com o tamanho da janela, e não com a do monitor
+
+
+</pre>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Borda - Border</h2>
+
+<pre>
+    body{
+        border-style: dotted;
+        border-radius: 5px;
+        border-color: rgb(250, 250, 250);
+    }
+
+Forma Abreviada:
+body{border: dotted 5px rgb(250, 250, 250);}
+
+Cada lado pode ser estilisado de forma individual.
+
+    body{
+        border-top-style
+        border-right-width
+        border-bottom-color
+        border-lef-color
+    }
+
+Forma abreviada:
+body{border-top:dotted 10px red;}
+</pre>
+
+<!--##########################################################################################################################################################################--->
+
+<br><hr>
+
+<h2>Links</h2>
+
+<pre>
+
+<a href="index2.html">Link 1</a> - Abre na mesma pagina.
+<a href="pagina02.html" target="blank" >Link 2</a> - Abre em outra pagina.
+
+a:hover {color: red} - Faz com que quando você passe o mouse sobre o link, a cor dele mude.
+a:hover {background-color: red} - Faz com que quando você passe o mouse sobre o link a cor de fundo do link mude.
+a:visited {color: teal;} - Faz com que quando você ja tenha acessado o link ele fique com uma cor diferente.
+a:active{color: black} - Faz com que quando você precione o mouse sobre o link ele fique com uma cor diferente, para indicar que você esta realmente clicando.
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="" alt="">
+
+</body>
+</html>

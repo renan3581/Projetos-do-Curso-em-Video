@@ -1,0 +1,149 @@
+/*Quando for escolher um fonte para seu site, é importante saber que tipo de emoção você deseja passar.*/ 
+
+
+/*----Anatomia dos tipos----*/
+/* 
+Palavras com serifas, ou seja com aqueles tracinhos nos pés das letras como o 'A', auxiliam na leitura, tornando-a mais facil.
+*/
+
+
+/*----Categoria de fontes----*/
+/*
+Fontes Serifadas - Guia o cerebro no momento da leitura - Principalmente utilizada em texto no papel.
+
+Fontes Sans-serif - Não possuem serifas - De preferencia a esse tipo de fonte quando seu site possuir muito texto.
+
+Fontes Monoespaçadas - Todas as letras ocupam um espaço identico.
+
+Fontes escriptadas(handwriting) - Fontes que simulam a escrita a mão.
+
+Fontes comemorativas(display) - Fontes que não possuem as caracteristicas das demais, são muito utilisadas para fazer referencia a filmes ou algo do tipo.
+*/
+
+/*
+Quando o nome da fonte é composto de duas ou mais palavras, você deve colocar-las entre ''. 
+
+Ex.: font-family: 'courier new';
+*/
+
+/*
+Dependendo da fonte que for escolhida, ela pode não existir em um determinado dispositivo, por este motivo nos devemos sempre escolher mais de 1 e sempre fazer as "safe combinations".
+
+Podemons generalizar, dizendo ao dispositivos que tipo de fonte nos queremos.
+Ex.: 
+     sans-serif - Fontes sem serifa.
+     serif - fontes com serifas.
+     monospace - fontes monoespaçadas
+*/
+
+
+/*----Tamanhos de Fontes----*/
+
+/*
+Medidas absolutas:
+cm, mm, in = polegada , px, pt, pc. 
+
+Medidas Relativas:
+em, ex, rem, vw = % da largura tela, vh = % da altura da tela, %.
+
+A medida '16px' é geralmente usado como padrão pelos navegadores.
+
+A w3c recomendas as medidas 'px' e 'em' para sites.
+Para impressão utilize pereferivelmente o 'pt'.
+
+1em =  geralmente 16px = Tamanho normal da letra.
+
+De preferencia a utilização do 'em' pois ele usa o tamanho da letra padrao, assim se adequando a qualquer dispositivo, o que não acontece com o px.
+*/
+
+
+/*----Peso e Estilo----*/
+
+/*Para que qualquer uma dos 2 seja altera, eles tem que ser suportado pela familia da fonte.*/
+
+body{ 
+/*Nem todas as fontes podem ter o seu 'peso' alterado.
+Ex de fonte que 'pode' ter seu peso alterado.*/
+
+ font-family: 'Work Sans';/* Essa fonte não existe no vscode, foi importada com o google fontes*/
+
+ font-weight: 100; /*Peso da fonte*/
+
+ /*Existem duas formas de se selecionar esse peso, de forma literal "lighter, normal, bold e bolder", e de forma numerica*/
+
+ font-style: italic; /*Pode ser normal ou italic*/
+ text-decoration: underline;/*outra opção de estilo, adiciona o sublinhado.*/
+
+ line-height: 1em;/*Altura entre linhas, ou seja o espaço que tem entre a linha de cima e a de baixo de um texto.*/
+
+}
+
+
+/*----Propriede Shorthand----*/
+/* Transforma multiplas linha de codigo em uma unica. */
+/*
+
+Tem que ser na seguinte ordem, mesmo que você retire um dos itens.
+-Font-style - font weight - font size - font family.
+font: italic bold 1em 'Work Sans'
+font: bold 1em 'Work Sans' 
+*/
+
+/*Procure utilizar no maximo 3 estilos de fontes no seu site.*/
+
+
+/*----Imports----*/
+
+/*
+É importante verificar se a fonte que você  escolheu possui glifos acentuados
+*/
+
+/* Import de fontes externas usando o Google fontes*/
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*Importando fontes externas, fora do google.*/
+@font-face {
+     font-family: 'Hontizema';
+     src: url('../Tutorial/fonts/Hontizema.otf') format('opentype'), 
+     url('../Tutorial/fonts/Hontizema.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+     
+     /*Tipos de format()*/
+     /*
+     - opentype(otf)
+     - truetype(ttf)
+     - embedded-opentype
+     - truetype-aat(Apple Advanced Typography)
+     - svg
+     */
+}
+
+/*----Capturar fontes----*/
+
+/*Capturar fontes de sistes*/
+/* 
+Basta utilizar a ferramenta 'fonts ninja' do google chrome, a ferramenta analisa o site e te diz quais fontes estão sendo utilizadas por ele.
+
+A ferramenta ainda te passa informações como tamanho da fonte, estilo, peso, cor, etc. Para isso basta passar o mouse sobre um texto, com a ferramenta ativada.
+*/
+
+
+/*----Alinhamento de texto----*/
+
+body{
+     text-align: center;
+}
+
+/*Quando você diferentes linhas definindo diferentes alinhamento, a que conta é a ultima*/
+
+body{
+     text-align: center;
+     text-align: end;/*Somente essa tera efeito.*/
+}
+
+/*identação de testo, espaçamento do texto no inicio do paragrafo.*/
+
+body{
+     text-indent: 20px;
+}

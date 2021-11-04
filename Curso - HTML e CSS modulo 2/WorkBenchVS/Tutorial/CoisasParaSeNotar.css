@@ -1,0 +1,11 @@
+/*
+Alguns elementos ja vem com uma margem ou paddding definidos no momento da criação e isso pode criar um espaçamento indesejado, para resolver isso basta definir:
+
+*{ Configuração global
+    margin: 0;
+    padding: 0;
+}
+
+Essas configurações são aplicadas a todos os elementos presentes no html.
+
+*/

@@ -1,0 +1,40 @@
+h1#principal{
+    background-color: red;
+   
+}
+
+.secundario{
+    color: red;
+}
+
+#d1,#d2,#d3{
+    display: inline-block;
+    background-color: lightcyan;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    
+}
+
+#d1:hover, #d2:hover, #d3:hover{
+    background-color: black;
+    transition: 450ms;
+}
+
+div:hover{
+    color: red;
+}
+
+div > p{
+    display: none;
+
+}
+
+div:hover > p{
+    display: block ;
+    color: white;
+    background-color: red;
+    width: 170px;
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/exercicio2.css">
+     
+
+</head>
+<body >
+
+ 
+     <header>
+        <h1 id="titulo">Verificador de Idade</h1>
+     </header>
+
+     <section id="calculadora">
+        <form>
+       <p>Ano de nascimento: <input type="number" name="input" id="input" min="0"></p>
+      </form>
+       <p>Sexo: 
+        <input type="radio" name="rdsex" id="maculino" checked>
+        <label for="masculino">Masculino</label>
+        <input type="radio"  name="rdsex" id="feminino">
+        <label for="feminino">Feminino</label>
+       </p>
+
+       <input type="button" id="botao" onclick="verificar()" value="Verificar" >
+
+       <p id="res">Preencha os dados acima para ver o resultado!</p>
+    </section>
+
+
+     <footer> 
+        <p id="cp">&copy;Renan Silva</p>
+     </footer> 
+  
+ 
+ <script src="../Js/exercicio2.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+/*body{
+    background-color: rgb(102, 148, 160);
+    color: white;
+    font: normal 22pt sans-serif;
+    height: 1500px;
+    width: 500px;
+
+}
+*/
+
+/*.nome{
+    font-family: roboto;
+    font-size: 22;
+}
+
+div#area{
+    font: normal 15px Arial;
+    background: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+
+}
+*/
+
+body{
+    background-color: rgb(123, 185, 255);
+    
+}
+
+
+h1#titulo{
+    color: white;
+    text-align: center;
+}
+
+section#con-img{
+    width: 600px;
+    padding:20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(36, 29, 29, 0.555);
+}
+
+div{
+    font-family: rubik;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+
+
+p#cp{
+    color: white;
+    font-family: rubik;
+    font-size: 22px;
+    text-align: center;
+}

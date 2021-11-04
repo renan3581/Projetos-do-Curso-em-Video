@@ -1,0 +1,162 @@
+/*----Modelo de Caixas----*/
+/*
+Todo elemento html é um elemento de caixa.
+
+O modelo de caixas pode ser definido como uma caixa dentro de outra.
+
+Cada caixar tem uma altura(height) e largura(width).
+
+Cada caixa possui uma borda(border) tambem.*/
+
+
+/*Padding e margin*/
+/*
+Para aumentar o espaço entre a borda e o conteudo, nos usamos o comando 'padding:~px;', que pode ser definido de forma que cada lado tenha uma distancia diferente ou no geral.
+
+Para criar um espaço entre uma caixa e outra nos usamos o comando 'margin:~px;', assim como o padding, o tamanho pode ser definido de forma que cada lado tenha uma distancia diferente ou no geral. 
+
+Para definir os valores no shorthand nos colocamos o valores em centido horario(Top, Direita,Bottom e Left).
+Ex.: 
+Individual:
+padding-top:~px;
+
+Shorthand:
+padding: ~px ~px ~px ~px;
+
+Se todas as medidas forem iguais basta colocar uma unica vez que sera replicado para todos os lados.
+Ex.: 
+padding: ~px;
+
+Se você colocar menos de 4 valores, o valor recebido por um dos lados sera o mesmo de seu oposto.
+Ex.: 
+padding: 10px 5px 15px; 
+Top - 10, Right - 5, Bottom -15 e left - 5 
+
+Para centralizar um elemento no meio da tela, nos definimos a margem dele como 'auto'.
+
+Para Para centralizar um elemento no meio da tela horizontalmente, definimos left e right como 'auto'.
+Ex.: 
+margin: 5px auto 30px;
+
+
+/*Outline*/
+/*
+Podemos definir um traçado(ouline) tambem. Este comando cria um traçado semelhante a uma borda que fica fora da borda e dentro da margem.Cuidado pois esse traçado passa por cima de outros elementos.
+*/
+
+
+/*Sombras*/
+
+body{
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.24) ;
+            /*horizontal, vertical, blur, espalhamento e cor*/
+
+    box-shadow:inset 2px 1px 3px 1px rgba(0, 0, 0, 0.24) ;
+            /*inset faz com que a sombra seja interna*/
+}
+
+
+/*Bordas Arredondadas*/
+
+nav{
+    border-radius: 10px; /*Shorthand*/
+    
+    border-radius: 2px 2px 2px 2px; /*Sentido Horario*/
+    
+    border-radius: 2px 10px; /*Superior esquerdo e inferior direito 2px, superior direito e inferior esquerdo 10px*/
+
+    border-radius: 50%; /*Trasforma a dive em uma bola*/
+
+    /*Pode ser utilizada porcentagem no lugar de px*/
+}
+
+
+/*Bordas Decoradas*/
+/*
+Transforma imagens em bordas.
+
+Tem que existir uma borda normal.
+
+div#bordaimage{
+    height: 100px;
+    background-color: white;
+    margin: 40px;
+    border: 20px solid;
+    border-image: url('../CSS/borda.png');
+    border-image-repeat: repeat;
+    border-image-slice: 32.1;
+
+    border-image:url('../CSS/borda.png') 32.1 repeat; Shorthand
+}
+*/
+
+
+/*----Tipos de Caixa----*/
+
+/*box-level*/
+/*
+Sempre que um elemento for criado ele ira para baixo do elemento existente, em uma nova linha e assim sucessivamente.
+
+Os elementos sempre ocupam a largura total da tela.
+
+Ex.: As tags <div>,<h1>,<p> e <main> são elementos do tipo box-level ,pois geralmente elas quebram linhas quando inseridas.
+*/
+
+
+/*inline-level*/
+/*
+Sempre que um elemento for criado ele ira ocupar o espaço definido para ele sem pular uma linha, e assim sucessivamente.
+
+Não precisam ocupar toda a largura da tela.
+
+Ex.: As tags <span>,<a>,<code> e <label> são elementos do tipo inline-level, pois elas não quebram linha quando inseridas.
+
+O navegador google chrome exibe o modelo de caixas da sua pagina na dev tools(f12) dele.
+
+O navegador sobre o nome de "user agent" define as propriedades CSS padrão quando um elemento é criado.
+
+Você pode mudar algumas propriedades no dev tools, mas essas propriedades não estaram presentes no arquivo css somente no navegador.
+
+Nos podemos transformar elemento inlien em block e vice versa. Atraves do comando 'display'.
+Ex.: 
+display: inline;
+display: block;
+display: innline-block;
+
+Para ajudar na visulização, referir-se ao ex04.
+
+*/
+
+
+
+/*----Grouping Tags----*/
+
+/*
+Estas Tags podem ser organizadas da maneira que você que quiser, mas geralmente são utilizadas na ordem que estão abaixo
+
+{
+header - Cabeçario
+nav - Navegação no site (links,menus,etc)
+}
+
+{
+main - Conteudo principal do seu site.
+section - Sessao de conteudo.
+article - Quando existe um artigo.
+Aside - Conteudo de canto de artigo(nome do autor, bibliorgrafia,etc)
+
+    <main>
+        <section>
+            <article>
+                <aside>
+                </aside>
+            </article>
+        </section>
+    </main>
+}
+
+footer - Rodapé
+
+Para melhor entendimento referir-se ao ex04 "grouping_tags.html"
+
+*/

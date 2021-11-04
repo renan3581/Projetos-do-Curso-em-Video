@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*
+body{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif; 
+    
+    /*Quando o nome da fonte é composto de duas ou mais palavras, você deve colocar-las entre ''. */
+
+    /*font-size:16px ;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline
+    
+    
+    font: italic bold 1em 'Work Sans'
+}
+
+*/
+
+@font-face {
+    font-family: 'Hontizema';
+    src: url('../../../Tutorial/fonts/Hontizema.otf') format('opentype'), 
+         url('../../../Tutorial/fonts/Hontizema.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font:normal 24px 'hontizema';
+    text-align: center;
+    
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+

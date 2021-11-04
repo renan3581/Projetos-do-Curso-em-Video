@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*----Seletores personalizados----*/
+/*
+Tipos:
+HTML = CSS
+
+- id = #
+Não é correto usar "id's" com valores iguais, o correto é cada id ter um valor unico.
+
+- class = .
+Quando se deseja aplicar configurações iguais a diferentes elemento nos usamos classes com valores identicos.
+
+
+Não classifique os seletores pelas formas e sim pelas funcionalidade.
+Ex.: Paragrafo principal com fundo verde.
+Utilize como classificação o 'principal' e não o 'verde'.
+
+<p id="principal">paragrafo</p>
+
+
+Quando nós definimos os valores dos elementos no CSS, nós podemos mencionar eles de duas formas.
+h1#principal ou #principal - Espeficicando o que é este elemento ou somente seu seletor.
+
+
+Quando quisermos colocar uma parte do texto em destque, nos podemos utilizar a tag <span> com um seletor, esta tag não tem uma função espeficica, você pode usar ela com diferentes intenções.
+Ex.: Para destacar um trexo de um texto.
+
+
+Podemos inserir mais de um valor em uma classe, para se referir a um determinado elemento. 
+Ex.:
+<p class="secundario destaque"> Paragarafo</p>
+
+Desta forma, nos podemos nos referir a esse elemento usando qualquer uma destes seletores.
+
+Podemos utilizar mais de um seletor tambem, porem se houverem configurações semelhantes, as configurações de "id" irão sobrescrever as de class. 
+*/
+
+
+/*----Pseudo-classes----*/
+
+/*
+São indicadas pelo simbolo ':'.
+
+Elas são relacionadas ao estado de um determinado elemento.
+
+Ex.: 
+div:hover{
+    background-color:black;
+}
+Isso irá fazer com que sempre que o mouse estiver sobre esse elemento, a cor de fundo dele fique preta.
+
+Ex2.:
+
+div:hover{
+    color: red;
+}
+
+div > p{
+    display: none;
+
+}
+
+div:hover > p{
+    display: block ;
+    color: white;
+    background-color: red;
+
+}
+
+O simbolo de > é usando para indicar que o elemento 'p' deve estar dentro do elemento div para que as mudanças tenham efeito.
+
+
+Você pode definir o tempo que demora para a mudança no elemento ocorrer, atraves do comando 'transition: ;'.
+Ex.:
+div:hover{
+    background-color:black;
+    transition:2s ou 2000ms; 
+}
+*/
+
+/*----Pseudo-elementos----*/
+
+/*
+São indicados pelo simbolo '::'
+
+Eles mexem diretamente no conteudo.
+Servem para 'ID' e 'Classes'
+
+Ex.: 
+
+a::after{
+    content:' [link]'; 
+    color: darkgray;
+}
+
+content:' [link]'; adiciona a frase entre '' no corpo do elemento citado.
+
+Para checar a usabilidade referir-se ao ex03/links.html
+
+*/
+
+/*----Uso CSS----*/
+/*
+   # = ID  
+   . = Class 
+   : = Pseudo-class   
+   :: = Pseudo-elemento
+   > = Children
+*/

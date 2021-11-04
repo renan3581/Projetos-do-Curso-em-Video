@@ -1,0 +1,37 @@
+/*
+HTML:
+Define em qual imagem deve aparecer até 800px e após 800px
+ <picture>
+    Até 600px:
+        <source media="(max-width: 600px)" srcset="../Desafios/imagens/irina-blok-pq.jpg">
+        
+        Após 600px:
+        <img src="../Desafios/imagens/irina-blok.jpg" alt="">
+    
+    <picture>
+
+    Referir-se á responsivo.html para maior entendimento.
+*/
+
+
+
+
+body{
+    background-color: grey;
+}
+main{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    /*Valores Minimos e maximos de largura*/
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+img{
+    /*Faz com que a imagem diminua ou aumente de tamanho de acordo com a largura da tela*/
+    width: 100%;
+}
+

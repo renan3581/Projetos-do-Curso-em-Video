@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(108, 195, 235);
+    text-align: center;
+    color: white;
+    font-family: rubik;
+    
+}
+
+section{
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.356);
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+
+h1{
+    font-weight: 500;
+}
+#cp{
+    font-size: 20px;
+}
