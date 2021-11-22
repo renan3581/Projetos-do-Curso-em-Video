@@ -31,7 +31,7 @@ Esses comandos podem ser feitos de formas semiautomática através do GitHub Des
 
 #### Git ignore:
 
-.gitignore (pasta/nomedoarquivo ou .tipo [para ignorar todos os arquivos deste tipo]). 
+crie um arquivo txt e dentro dele coloque (pasta/nomedoarquivo.algo ou .tipo [para ignorar todos os arquivos deste tipo]) depois mude a extensão para  .gitignore. 
 
 
 
