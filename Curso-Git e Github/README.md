@@ -19,7 +19,7 @@
 
 + git pull (nome) (branch) - Puxa o commit da branch desejada.
 
-+ git fetch (nome) (branch) - Verifica se os arquivos no repositório remoto estão iguais ao do  repositório local 
++ git fetch (nome) (branch) - Verifica se os arquivos no repositório remoto estão iguais ao do  repositório local. 
 
 + git clone URL - Clona o repositório da URL.
 
