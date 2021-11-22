@@ -31,7 +31,9 @@ Esses comandos podem ser feitos de formas semiautomática através do GitHub Des
 
 #### Git ignore:
 
-dsads
+.gitignore (pasta/nomedoarquivo ou .tipo [para ignorar todos os arquivos deste tipo]). 
+
+
 
 
 
