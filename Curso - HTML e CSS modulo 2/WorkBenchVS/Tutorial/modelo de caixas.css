@@ -158,5 +158,10 @@ Aside - Conteudo de canto de artigo(nome do autor, bibliorgrafia,etc)
 footer - Rodapé
 
 Para melhor entendimento referir-se ao ex04 "grouping_tags.html"
+*/
 
+
+/*----Box Sizing----*/
+/*
+box-sizing: border-box; Limita o conteudo ao tamanho da caixa.
 */
