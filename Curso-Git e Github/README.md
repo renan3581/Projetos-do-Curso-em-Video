@@ -5,22 +5,27 @@
 #### Comandos Git:
 
 + git init - Inicializa o git na pasta desejada.
-+ git add  - Muda o status da pasta para modified e prepara ela para o commit.
-+ git commit -m " " - Realiza o commit e adiciona um comentario a esse commit.
++ git add (* / --all)  - Muda o status da pasta para "modified" e prepara ela para o commit.
++ git commit -m " " - Realiza o commit e adiciona um comentário a esse commit.
 
 
 
 
 #### Comandos GitHub:
 
-+ git add remote origin URL - Define o repositorio para onde os commits devem ser enviados.
-+ git push origin (branch) - Envia o commit para a branch desejada.
-+ git pull origin (branch) - Puxa o commit da branch desejada.
-+ git clone URL - Clona o repositorio da URL.
++ git remote add  (nome) URL - Define o repositório para onde os commits devem ser enviados. (Esse nome será usado para se referir a essa URL, Eu costumo utilizar o nome  "origin")
 
++ git push (nome) (branch) - Envia o commit para a branch desejada.
 
++ git pull (nome) (branch) - Puxa o commit da branch desejada.
 
-Esses comandos podem ser feitos de formas semi-automatica atraves do GitHub Desktop.
++ git fetch (nome) (branch) - Verifica se os arquivos no repositório remoto estão iguais ao do  repositório local 
+
++ git clone URL - Clona o repositório da URL.
+
+  
+
+Esses comandos podem ser feitos de formas semiautomática através do GitHub Desktop.
 
 
 
