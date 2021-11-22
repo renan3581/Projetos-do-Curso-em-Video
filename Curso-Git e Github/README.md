@@ -13,7 +13,7 @@
 
 #### Comandos GitHub:
 
-+ git remote add  (nome) URL - Define o repositório para onde os commits devem ser enviados. (Esse nome será usado para se referir a essa URL, Eu costumo utilizar o nome  "origin")
++ git remote add  (nome) URL - Define o repositório para onde os commits devem ser enviados. (Esse nome será usado para se referir a essa URL, Eu costumo utilizar o nome  "origin" quando estou utilizando apenas um repositório.)
 
 + git push (nome) (branch) - Envia o commit para a branch desejada.
 
