@@ -1,4 +1,4 @@
-## Git e Github - Curso em Video
+## Git e GitHub - Curso em Video
 
 
 
@@ -11,7 +11,7 @@
 
 
 
-#### Comandos Github:
+#### Comandos GitHub:
 
 + git add remote origin URL - Define o repositorio para onde os commits devem ser enviados.
 + git push origin (branch) - Envia o commit para a branch desejada.
@@ -20,9 +20,13 @@
 
 
 
+Esses comandos podem ser feitos de formas semi-automatica atraves do GitHub Desktop.
+
+
+
 #### Git ignore:
 
-
+dsads
 
 
 
